@@ -1,0 +1,234 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(7, 7, 87);
+    color: aqua;
+    border-radius: 3px;
+    border: 1px solid aquamarine;
+    font-family: 'Rationale', sans-serif;
+}
+
+body {
+    height: 100hv;
+    border: none;
+}
+
+.active {
+    border: 2px solid white;
+    color: white;
+    font-weight: bold;
+}
+
+.container {
+    height: 100hv;
+    margin: 0 auto;
+}
+
+.block {
+    width: 80%;
+    margin: 10px auto;
+}
+
+
+/* ------------BLOCK-1-------------- */
+
+.block1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.current-date,
+.current-time {
+    border: none;
+}
+
+.current-date {
+    padding-top: 20px;
+    font-size: 24px;
+}
+
+.current-time {
+    font-size: 60px;
+}
+
+
+/* ------------BLOCK-2-------------- */
+
+.block2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.timer__display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    font-size: 36px;
+}
+
+.timer__btn {
+    border: none;
+}
+
+.timer__btn input {
+    padding: 5px 10px;
+}
+
+.loop-display {
+    height: 150px;
+    width: 200px;
+    margin: 10px 10px;
+}
+
+.loop-display h2 {
+    border: none;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+@media screen and (max-width: 569px) {
+    .block {
+        width: 100%;
+        margin: 10px auto;
+    }
+    .timer__display {
+        font-size: 24px;
+        padding-left: 10px;
+    }
+    .timer__btn input {
+        padding: 0 5px;
+        margin: 5px;
+    }
+    .timer__btn {
+        padding-left: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 436px) {
+    .block {
+        width: 100%;
+        margin: 10px auto;
+    }
+    .timer__display {
+        font-size: 24px;
+        padding: 5px;
+    }
+    .timer__btn {
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .timer__btn input {
+        font-size: 14px;
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width: 368px) {
+    .block {
+        width: 100%;
+        margin: 10px auto;
+    }
+    .timer {
+        width: 60%;
+    }
+    .timer__display {
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+
+/* ------------BLOCK-3-------------- */
+
+.block3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.countdown-set,
+.countdown-display {
+    width: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+}
+
+.countdown-set>* {
+    border: none;
+}
+
+.countdown-display>* {
+    border: none;
+    padding-right: 10px;
+}
+
+.countdown-set input[type='button'] {
+    padding: 0 15px;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.countdown-set__number {
+    font-size: 60px;
+}
+
+.countdown-set__number {
+    font-size: 60px;
+}
+
+.countdown-set h2 {
+    margin-bottom: 5px;
+}
+
+.countdown {
+    font-size: 60px;
+}
+
+.countdown-display__btn input[type='button'] {
+    padding: 0 15px;
+    font-size: 24px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 699px) {
+    .countdown-display__btn input[type='button'] {
+        padding: 0 5px;
+        font-size: 14px;
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .countdown {
+        font-size: 48px;
+        margin-bottom: 10px;
+    }
+}

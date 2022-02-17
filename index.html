@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>setTimeout, setInterval, Date</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rationale&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="block block1">
+            <div class="current-date"></div>
+            <div class="current-time"></div>
+        </div>
+        <div class="block block2">
+            <div class="timer">
+                <div class="timer__display"></div>
+                <div class="timer__btn">
+                    <input type="button" value="START" class="t-start" />
+                    <input type="button" value="LOOP" class="t-loop" />
+                    <input type="button" value="STOP" class="t-stop" />
+                    <input type="button" value="RESET" class="t-reset" />
+                </div>
+            </div>
+            <div class="loop-display"></div>
+        </div>
+        <div class="block block3">
+            <div class="countdown-set">
+                <div class="countdown-set__number">7</div>
+                <h2>MINUTES</h2>
+                <div class="countdown-set__btn">
+                    <input type="button" value="+" />
+                    <input type="button" value="-" />
+                </div>
+            </div>
+            <div class="countdown-display">
+                <div class="countdown"></div>
+                <div class="countdown-display__btn">
+                    <input type="button" value="START" class="cd-start" />
+                    <input type="button" value="STOP" class="cd-stop" />
+                    <input type="button" value="RESET" class="cd-reset" />
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </div>
+</body>
+
+</html>
